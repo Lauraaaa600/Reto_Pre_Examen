@@ -20,15 +20,28 @@ class FilaIndia{
     soldados.add(soldado);
   }
         
-}public void revisar(int[] comandantes, int[] subordinados) {
+}
+public void revisar(int[] comandantes, int[] subordinados) {
     for (int i = 0; i < comandantes.length; i++) {
       int comandante = comandantes[i];
       int subordinado = subordinados[i];
+      
+    
+      int posComandante = soldados.indexOf(comandante);
+      int posSubordinado = soldados.indexOf(subordinado);
+      
+    
+      if (posSubordinado > posComandante) { 
+        System.out.println("NO. " + comandante + "-" + subordinado);
+        return;
+      }
+    }
+    System.out.println("SI.");
+  }
+      
     
 
 
-
-}
 
 public class SupervisionSoldados {
 	public static void main(String[] args) {
