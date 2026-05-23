@@ -20,7 +20,10 @@ class FilaIndia{
     soldados.add(soldado);
   }
         
-    }
+}public void revisar(int[] comandantes, int[] subordinados) {
+    for (int i = 0; i < comandantes.length; i++) {
+      int comandante = comandantes[i];
+      int subordinado = subordinados[i];
     
 
 
