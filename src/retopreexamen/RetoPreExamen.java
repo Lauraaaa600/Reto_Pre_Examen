@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 class Lectura {
   private static Scanner inp = new Scanner(System.in);
+  
   public static int nextInt(String mss) {
     System.out.print(mss);
     return inp.nextInt();
@@ -36,8 +37,8 @@ public void revisar(int[] comandantes, int[] subordinados) {
         System.out.println("NO. " + comandante + "-" + subordinado);
         return;
       }
+      System.out.println("SI.");
     }
-    System.out.println("SI.");
   }
      
 public class retopreexamen {
