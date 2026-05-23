@@ -1,6 +1,7 @@
 
 package retopreexamen;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 class Lectura {
   private static Scanner inp = new Scanner(System.in);
@@ -11,12 +12,13 @@ class Lectura {
 }
 
 class FilaIndia{
-    private int[]soldados;
-    public FilaIndia (int n, Lectura lectura){
-        soldados=new int[];
-        for (int i = 0; i<n;i++){
-            System.out.print("Siguiente soldado: ");
-        }
+   // Lista para almacenar el orden de los soldados
+  private ArrayList<Integer> soldados = new ArrayList<>();
+
+  // Método para agregar un soldado a la fila
+  public void add(int soldado) {
+    soldados.add(soldado);
+  }
         
     }
     
