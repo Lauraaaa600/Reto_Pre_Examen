@@ -1,5 +1,6 @@
 
 package retopreexamen;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -19,8 +20,8 @@ class FilaIndia{
   public void add(int soldado) {
     soldados.add(soldado);
   }
-        
-}
+            
+
 public void revisar(int[] comandantes, int[] subordinados) {
     for (int i = 0; i < comandantes.length; i++) {
       int comandante = comandantes[i];
@@ -31,19 +32,15 @@ public void revisar(int[] comandantes, int[] subordinados) {
       int posSubordinado = soldados.indexOf(subordinado);
       
     
-      if (posSubordinado > posComandante) { 
+      if (posSubordinado <= posComandante) { 
         System.out.println("NO. " + comandante + "-" + subordinado);
         return;
       }
     }
     System.out.println("SI.");
   }
-      
-    
-
-
-
-public class SupervisionSoldados {
+     
+public class retopreexamen {
 	public static void main(String[] args) {
 		FilaIndia filaI = new FilaIndia();
 		int comandantes[], subordinados[];
@@ -61,4 +58,5 @@ public class SupervisionSoldados {
 		}
 		filaI.revisar(comandantes, subordinados);
 	}
+    }
 }
