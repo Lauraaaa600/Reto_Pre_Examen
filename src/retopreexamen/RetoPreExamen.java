@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 class Lectura {
-  private static Scanner inp = new Scanner(System.in);
+  public static Scanner inp = new Scanner(System.in);
   
   public static int nextInt(String mss) {
     System.out.print(mss);
@@ -15,7 +15,7 @@ class Lectura {
 
 class FilaIndia{
    // Lista para almacenar el orden de los soldados
-  private ArrayList<Integer> soldados = new ArrayList<>();
+  public ArrayList<Integer> soldados = new ArrayList<>();
 
   // Método para agregar un soldado a la fila
   public void add(int soldado) {
@@ -40,17 +40,17 @@ public void revisar(int[] comandantes, int[] subordinados) {
       System.out.println("SI.");
     }
   }
-     
-public class retopreexamen {
+}     
+public class RetoPreExamen {
 	public static void main(String[] args) {
 		FilaIndia filaI = new FilaIndia();
 		int comandantes[], subordinados[];
 
-		int n = Lectura.nextInt("Cuántos soldados en la fila: ");
+		int n = Lectura.nextInt("Cuantos soldados en la fila: ");
 		for (int i = 0; i < n; i++)
 		  filaI.add(Lectura.nextInt("Siguiente soldado: "));
 
-		int s = Lectura.nextInt("Cuántos supervisados: ");
+		int s = Lectura.nextInt("Cuantos supervisados: ");
 		comandantes = new int[s];
 		subordinados = new int[s];
 		for (int i = 0; i < s; i++) {
@@ -60,4 +60,3 @@ public class retopreexamen {
 		filaI.revisar(comandantes, subordinados);
 	}
     }
-}
